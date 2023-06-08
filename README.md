@@ -20,12 +20,20 @@ sumBy10(5) // 10 is getting clousured (remembered)
 
 c. What is the event loop in JavaScript and how does it work?
 
+The event loop starts by checking if there are any instructions that need to be executed.
+If there are instructions, the event loop takes the first one and starts executing it.
+While the instruction is being executed, the event loop keeps an eye out for other instructions that might need to be executed.
+If it finds another instruction, it puts it aside for later and continues executing the current one.
+Once the current instruction is finished, the event loop moves on to the next instruction in line and repeats the process.
+This continues until all the instructions have been executed, and the event loop stops.
+
 Node.js Framework:
 
 a. What is Node.js and what are its main features?
 node.js it's a framework/library that provides javascript the capabilities of being able to create and communicate with servers.
 
 b. Explain the concept of asynchronous programming in Node.js. c. How does Node.js handle concurrent requests efficiently?
+Node.js can initiate multiple tasks simultaneously and handle their completion separately. Node.js achieves efficient handling of concurrent requests through its non-blocking, event-driven architecture
 
 React Framework:
 
